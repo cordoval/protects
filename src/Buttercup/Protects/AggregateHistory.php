@@ -2,8 +2,6 @@
 
 namespace Buttercup\Protects;
 
-use Buttercup\Protects\IdentifiesAggregate;
-
 final class AggregateHistory extends DomainEvents
 {
     /**

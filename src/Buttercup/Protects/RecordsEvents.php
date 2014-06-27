@@ -15,7 +15,6 @@ interface RecordsEvents
      */
     public function getRecordedEvents();
 
-
     /**
      * Clears the record of new Domain Events. This doesn't clear the history of the object.
      * @return void

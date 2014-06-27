@@ -11,7 +11,6 @@ use Buttercup\Protects\DomainEvent;
 use Buttercup\Protects\DomainEvents;
 use Buttercup\Protects\RecordsEvents;
 use Buttercup\Protects\Tests\Misc\ProductId;
-use Exception;
 
 // As an example, let's introduce an invariant that states that *"A Basket can have no more than three Products"*.
 // Let's write a test that proves that the a `BasketLimitReached` exception is thrown when we try to violate the invariant.
@@ -82,6 +81,6 @@ final class BasketV2 implements RecordsEvents
 }
 
 // I like to have very specific exceptions for each possible invariant.
-final class BasketLimitReached extends Exception {}
+final class BasketLimitReached extends \Exception {}
 
 $test();

@@ -1,12 +1,8 @@
 <?php
+
 namespace Buttercup\Protects;
 
-use ArrayAccess;
-use Countable;
-use Iterator;
-use SplFixedArray;
-
-abstract class ImmutableArray extends SplFixedArray implements Countable, Iterator, ArrayAccess
+abstract class ImmutableArray extends \SplFixedArray implements \Countable, \Iterator, \ArrayAccess
 {
     public function __construct(array $items)
     {
@@ -75,5 +71,4 @@ abstract class ImmutableArray extends SplFixedArray implements Countable, Iterat
     {
         throw new ArrayIsImmutable();
     }
-
 }

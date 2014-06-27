@@ -5,6 +5,7 @@
 // in the client. Some infrastructure, such as an **Event Store**, might require UUIDs exclusively, so they can optimize
 // for it.
 namespace Buttercup\Protects\Tests;
+
 use Buttercup\Protects\IdentifiesAggregate;
 
 // Simply use the `IdentifiesAggregate` interface on a class such as BasketId, and implement its methods.

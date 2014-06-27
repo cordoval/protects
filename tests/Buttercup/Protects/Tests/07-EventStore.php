@@ -48,6 +48,7 @@ final class InMemoryEventStore implements EventStore
             array_filter(
                 $this->events,
                 function (DomainEvent $event) use ($id) { return $event->getAggregateId()->equals($id); }
-            ));
+            )
+        );
     }
 } 

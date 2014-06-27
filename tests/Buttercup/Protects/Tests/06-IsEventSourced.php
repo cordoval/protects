@@ -146,7 +146,6 @@ final class BasketV4 implements RecordsEvents, IsEventSourced
     private function __construct(BasketId $basketId) { $this->basketId = $basketId; }
     public function getRecordedEvents() { return new DomainEvents($this->latestRecordedEvents); }
     public function clearRecordedEvents() { $this->latestRecordedEvents = []; }
-
 }
 
 $test();

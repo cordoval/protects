@@ -59,7 +59,6 @@ final class BasketV3 implements RecordsEvents
         ++$this->productCount;
     }
 
-
     public function removeProduct(ProductId $productId)
     {
         // Now we will only record an event, if the Product was in fact still in the Basket. If it isn't, nothing
